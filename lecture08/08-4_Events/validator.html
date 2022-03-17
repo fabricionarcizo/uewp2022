@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Website Title</title>
+  <script type="text/javascript">
+    function validation() {
+      let name = document.getElementById("name").value
+      if (name == "") {
+        alert("The user's name is required!")
+        document.register.name.focus()
+        return false
+      }
+      return true
+    }
+  </script>
+</head>
+<body>
+  <form name="register" action="#" onsubmit="validation()">
+    Name: <input type="text" name="name" id="name" /><br />
+    <input type="submit" value="Send" />
+  </form>
+</body>
+</html>
