@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>WebSite Title</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+<script type="text/javascript">
+    async function download() {
+        const url = "search.json"
+        let response = await fetch(url)
+
+        // If HTTP-status is 200-299
+        if (response.ok) {
+            // Get the response body
+            let json = await response.json()
+            let text = JSON.stringify(json)
+            document.writeln(text)
+        } else {
+            alert("Error: " + response.status)
+        }
+    }
+
+    download()
+</script>
+</head>
