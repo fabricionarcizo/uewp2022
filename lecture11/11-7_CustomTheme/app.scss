@@ -1,0 +1,27 @@
+@use "@material/theme" with (
+  $primary: #FF9800,
+  $secondary: #7C4DFF,
+  $on-primary: #212121,
+  $on-secondary: #757575,
+);
+
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+@use "@material/button/styles";
+
+@include textfield.core-styles;
+
+body {
+    padding: 1vh;
+}
+
+.team-field {
+    width: 300px;
+    margin: 20px 0;
+}
+
+.confirm-button {
+    display: block;
+}

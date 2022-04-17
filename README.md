@@ -8,6 +8,6 @@ The following table presents the technical lectures plane:
 | 05 | 01/03/2022 | [Introduction to HTML & HTTP](lecture05) |
 | 06 | 08/03/2022 | [Introduction to CSS & Responsive Design](lecture06) |
 | 08 | 22/03/2022 | [Introduction to JavaScript](lecture08) |
-| 09 | 29/03/2022 | Advanced Javascript |
-| 11 | 19/04/2022 | Design Patterns and Material Design |
+| 09 | 29/03/2022 | [Advanced Javascript](lecture09) |
+| 11 | 19/04/2022 | [Design Patterns and Material Design](lecture11) |
 | 12 | 26/04/2022 | Frontend Structure |

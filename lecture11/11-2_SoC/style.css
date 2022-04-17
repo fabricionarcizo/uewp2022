@@ -1,0 +1,14 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: #6B6BD7;
+}
+.red-text {
+    color: red;
+}

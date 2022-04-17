@@ -1,0 +1,89 @@
+@use "@material/theme" with (
+  $primary: #FEDBD0,
+  $on-primary: #442C2E,
+  $secondary: #FEEAE6,
+  $on-secondary: #442C2E,
+  $surface: #FFFBFA,
+  $on-surface: #442C2E,
+  $background: #FFFFFF
+);
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+$mdc-typography-font-family: unquote("Montserrat, sans-serif");
+$mdc-typography-styles-button: (
+  font-size: 14px,
+  font-weight: bold,
+);
+$mdc-typography-styles-headline6: (
+  font-size: 20px,
+);
+
+@import "@material/button/mdc-button";
+@import "@material/textfield/mdc-text-field";
+@import "@material/select/mdc-select";
+@import "@material/list/mdc-list";
+@import "@material/menu-surface/mdc-menu-surface";
+@import "@material/menu/mdc-menu";
+@import "@material/chips/styles";
+@import '@material/top-app-bar/mdc-top-app-bar';
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
+@import "@material/tab/mixins";
+@import "@material/tab-indicator/mixins";
+@import "@material/ripple/mixins";
+@import "@material/card/mdc-card";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/typography/mixins";
+
+body {
+  margin: 0;
+  background: mdc-theme-prop-value(background);
+}
+
+.mdc-tab {
+  @include mdc-tab-text-label-color(#442C2E);
+  @include mdc-tab-icon-color(#442C2E);
+
+  .mdc-tab__ripple {
+    @include mdc-states(white);
+  }
+}
+
+.mdc-tab-indicator {
+  @include mdc-tab-indicator-underline-color(#442C2E);
+}
+
+.main--fixed-adjust {
+  padding-top: 112px;
+}
+
+.mdc-layout-grid {
+  max-width: 1480px;
+}
+
+.mdc-layout-grid--hidden {
+  display: none;
+}
+
+$card-text-label-baseline: 16px;
+
+.mdc-card__text-label {
+  margin: 0 16px;
+  @include mdc-typography(headline6);
+  @include mdc-typography-baseline-top(32px);
+}
+
+$card-secondary-baseline: 16px;
+
+.mdc-card__secondary {
+  margin: 0 16px;
+  @include mdc-typography(body2);
+  @include mdc-typography-baseline-top(24px);
+  @include mdc-typography-baseline-bottom(-$card-secondary-baseline);
+}
+
+.mdc-card{
+  border-radius: 16px;
+}

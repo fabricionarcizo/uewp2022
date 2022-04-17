@@ -1,0 +1,14 @@
+/* content of style.css */
+.new {
+    background-color: yellow;
+    font-weight: bold;
+}
+ 
+.deleted {
+    color: gray;
+    text-decoration:line-through;
+}
+ 
+.star {
+    list-style-image:url('star.png');
+}

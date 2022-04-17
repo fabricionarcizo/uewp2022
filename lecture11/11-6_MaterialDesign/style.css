@@ -1,0 +1,12 @@
+:root {
+  --mdc-theme-primary: #E91E63;
+  --mdc-theme-secondary: #00BCD4;
+}
+
+.mdc-floating-label--float-above {
+   color:  #E91E63 !important;
+}
+
+body {
+  padding: 5vh;
+}

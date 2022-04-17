@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+  <title>Material Design</title>
+  <link rel="stylesheet" href="bundle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+        <h1 class="mdc-top-app-bar__title">My Favorites Actors</h1>
+      </section>
+    </div>
+
+    <div class="mdc-tab-bar" role="tablist">
+      <div class="mdc-tab-scroller">
+        <div class="mdc-tab-scroller__scroll-area">
+          <div class="mdc-tab-scroller__scroll-content">
+
+            <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+              <span class="mdc-tab__content">
+                <span class="mdc-tab__icon material-icons" aria-hidden="true">sports_kabaddi</span>
+                <span class="mdc-tab__text-label">Martial Artists</span>
+              </span>
+              <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+              </span>
+              <span class="mdc-tab__ripple"></span>
+            </button>
+
+            <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+              <span class="mdc-tab__content">
+                <span class="mdc-tab__icon material-icons" aria-hidden="true">movie</span>
+                <span class="mdc-tab__text-label">Movies</span>
+              </span>
+              <span class="mdc-tab-indicator">
+                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+              </span>
+              <span class="mdc-tab__ripple"></span>
+            </button>
+
+            <button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+              <span class="mdc-tab__content">
+                <span class="mdc-tab__icon material-icons" aria-hidden="true">emoji_emotions</span>
+                <span class="mdc-tab__text-label">Cartoons</span>
+              </span>
+              <span class="mdc-tab-indicator">
+                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+              </span>
+              <span class="mdc-tab__ripple"></span>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main--fixed-adjust">
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/chuck-norris.jpg')"></div>
+            <div class="mdc-card__text-label">Chuck Norris</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Carlos Ray "Chuck" Norris (born March 10, 1940) is an American martial artist, actor, film producer, and screenwriter.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Chuck_Norris">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/bruce-lee.jpg')"></div>
+            <div class="mdc-card__text-label">Bruce Lee</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Lee Jun-fan (November 27, 1940 – July 20, 1973) was a Chinese-American martial artist, actor, director, martial arts instructor and philosopher.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Bruce_Lee">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/steven-seagal.jpg')"></div>
+            <div class="mdc-card__text-label">Steven Seagal</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Steven Frederic Seagal (/sɪˈɡɑːl/; born April 10, 1952) is an American actor, screenwriter, producer, martial artist, and musician.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Steven_Seagal">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/tony-jaa.jpg')"></div>
+            <div class="mdc-card__text-label">Tony Jaa</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Tatchakorn Yeerum (born 5 February 1976) is a Thai martial artist, actor, action choreographer, stuntman, director and former Buddhist monk.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Tony_Jaa">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/jet-li.jpg')"></div>
+            <div class="mdc-card__text-label">Jet Li</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Li Lianjie (born 26 April 1963) is a Chinese-born Singaporean film actor, film producer, martial artist, and retired Wushu champion who was born in Beijing.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Jet_Li">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/jean-claude-van-damme.jpg')"></div>
+            <div class="mdc-card__text-label">Jean-Claude Van Damme</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Jean-Claude Camille François Van Varenberg (born 18 October 1960) is a Belgian actor, filmmaker, fight choreographer and retired martial artist best known for his martial arts action films.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Jean-Claude_Van_Damme">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="mdc-layout-grid mdc-layout-grid--hidden">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell">
+
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/will-smith.jpg')"></div>
+            <div class="mdc-card__text-label">Will Smith</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Willard Carroll Smith Jr. (born September 25, 1968) is an American actor, rapper, and film producer.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Will_Smith">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/julia-roberts.jpg')"></div>
+            <div class="mdc-card__text-label">Julia Roberts</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Julia Fiona Roberts (born October 28, 1967) is an American actress and producer.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Julia_Roberts">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/julie-andrews.jpg')"></div>
+            <div class="mdc-card__text-label">Julie Andrews</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Dame Julie Andrews DBE (born Julia Elizabeth Wells; 1 October 1935) is an English actress, singer, and author.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Julie_Andrews">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/tom-hanks.jpg')"></div>
+            <div class="mdc-card__text-label">Tom Hanks</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Thomas Jeffrey Hanks (born July 9, 1956) is an American actor and filmmaker.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Tom_Hanks">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/drew-barrymore.jpg')"></div>
+            <div class="mdc-card__text-label">Drew Barrymore</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Drew Blythe Barrymore (born February 22, 1975) is an American actress, producer, director, talk show host and entrepreneur, who is the recipient of numerous accolades, including a Golden Globe, a Screen Actors Guild Award, and a BAFTA nomination.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Drew_Barrymore">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mdc-layout-grid mdc-layout-grid--hidden">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell">
+
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/johnny-bravo.png')"></div>
+            <div class="mdc-card__text-label">Johnny Bravo</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Johnny Bravo is an American animated television series created by Van Partible for Cartoon Network, and the second of the network's Cartoon Cartoons, which aired from July 14, 1997, to August 27, 2004.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Johnny_Bravo">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/homer-simpson.png')"></div>
+            <div class="mdc-card__text-label">Homer Simpson</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Homer Jay Simpson is a fictional character and one of the main protagonists of the American animated sitcom The Simpsons.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Homer_Simpson">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/the-brain.png')"></div>
+            <div class="mdc-card__text-label">The Brain</div>
+            <div class="mdc-card__secondary mdc-typography--body2">Pinky and the Brain is an American animated television series that was created by Tom Ruegger that premiered on Kids' WB on September 9, 1995.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Pinky_and_the_Brain">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mdc-layout-grid__cell">
+          <div class="mdc-card mdc-card--outlined">
+            <div class="mdc-card__media mdc-card__media--square" style="background-image: url('./images/taz.png')"></div>
+            <div class="mdc-card__text-label">Tasmanian Devil</div>
+            <div class="mdc-card__secondary mdc-typography--body2">The Tasmanian Devil, commonly referred to as Taz, is an animated cartoon character featured in the Warner Bros Looney Tunes and Merrie Melodies series of cartoons.</div>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://en.wikipedia.org/wiki/Tasmanian_Devil_(Looney_Tunes)">
+                  <i class="material-icons mdc-button__icon">info</i> <span>Wikipedia</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="bundle.js" async></script>
+</body>
+</html>
