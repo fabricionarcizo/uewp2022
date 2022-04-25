@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website Title</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="parent">
+        <div class="ease box1">ease</div>
+        <div class="easein box1">ease-in</div>
+        <div class="easeout box1">ease-out</div>
+        <div class="easeinout box1">ease-in-out</div>
+        <div class="linear box1">linear</div>
+        <div class="cb box1">cubic-bezier(0.2, -2, 0.8, 2)</div>
+    </div>  
+    <script>
+        function updateTransition() {
+            var els = document.querySelectorAll(".parent > div[class]");
+            for(var c = els.length, i = 0; i < c; i++) {
+                els[i].classList.toggle("box1");
+            }
+        }
+        var intervalID = window.setInterval(updateTransition, 10000);
+    </script>
+</body>
+</html>
